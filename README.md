@@ -1,5 +1,9 @@
 # Temporal Pyramid Network for Action Recognition 
 
+![image](./docs/figures/framework.png)
+[Paper]
+[[Project Page](https://decisionforce.github.io/TPN/)]
+
 ## News
 - Paper and code are coming soon
 
