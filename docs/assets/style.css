@@ -1,0 +1,184 @@
+/* Homepage Style */
+
+/* Body */
+body {
+	background: #e3e5e8;
+	color: #ffffff;
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 14pt;
+}
+
+/* Headings */
+h1 {font-size:30pt;}
+h2 {font-size:22pt;}
+h3 {font-size:14pt;}
+
+/* Hyperlinks */
+a {text-decoration: none;}
+a:link {color: #1772d0;}
+a:visited {color: #1772d0;}
+a:active {color: red;}
+a:hover {color: #f09228;}
+
+pre {
+	background: #fcfcfc;
+	border: 0;
+	font-size: 12pt;
+	margin: 5pt auto;
+}
+
+/* Container */
+.container {
+	width: 768pt;
+	min-height: 100pt;
+	margin: 15pt auto;
+	padding: 20pt;
+	border: 1pt hidden #000;
+	text-align: justify;
+	color: #000000;
+	background: #ffffff;
+}
+
+.container .title {
+	text-align: center;
+	font-size: 22pt;
+	margin: 5pt auto;
+}
+
+.container .author {
+	text-align: center;
+	font-size: 16pt;
+	margin: 20pt auto;
+}
+
+.container .institution {
+	text-align: center;
+	font-size: 16pt;
+	margin: 20pt auto;
+}
+
+.container .link {
+	text-align: center;
+	font-size: 16pt;
+	margin: 20pt auto;
+}
+
+.container .teaser {text-align: center;}
+.container .teaser img {
+	text-align: center;
+	margin: 20pt auto;
+	width: 95%;
+}
+
+.container .body {
+	text-align: justify;
+	font-size: 14pt;
+	margin: 10pt auto;
+}
+
+.container .bibtex {
+	text-align: left;
+	font-size: 22pt;
+	margin: 5pt auto;
+}
+
+.container .ref {
+	text-align: left;
+	font-size: 18pt;
+	font-weight: bold;
+	margin: 15pt auto;
+}
+
+.container .citation {
+  margin: 8pt auto;
+  font-size:14pt;
+  clear: both;
+}
+
+.container .citation img {
+  float: left;
+  margin: 0 8pt 8pt 0;  /*top right bottom left*/
+  width: 120pt;
+}
+
+/* Homepage */
+/* Followings can be removed for single project page. */
+.homepage {
+	width: 768pt;
+	min-height: 100pt;
+	margin: 15pt auto;
+	padding: 20pt;
+	border: 1pt hidden #000;
+	text-align: justify;
+	color: #000000;
+	background: #ffffff;
+}
+
+.homepage .header {
+	margin-top: 30pt;
+	margin-bottom: 60pt;
+	margin-right: 70pt;
+	font-size: 28pt;
+	text-align: center;
+}
+.homepage .header img{
+	height: 80pt;
+	float: left;
+	object-fit: cover;
+	margin-left: 20pt;
+}
+
+.homepage .section {
+	text-align: left;
+	font-size: 25pt;
+	font-weight: bolder;
+	margin: 50pt 20pt 20pt 20pt;  /*top right bottom left*/
+}
+
+.homepage .project {
+	height: 130pt;
+	outline: thin dotted #666666;
+	margin: 10pt 20pt 10pt 20pt;  /*top right bottom left*/
+}
+.homepage .project .image{
+  height: 120pt;
+  width: 160pt;
+  float: left;
+  text-align: center;
+  vertical-align: top;
+}
+.homepage .project .image img{
+	height: 120pt;
+	width: 160pt;
+	object-fit: cover;
+	border-radius: 6pt;
+	box-shadow: 1pt 1pt 2pt #888888;
+	-moz-box-shadow: 1pt 1pt 2pt #888888;
+	-webkit-box-shadow: 1pt 1pt 2pt #888888;
+	margin: 5pt;
+}
+.homepage .project .info {
+	font-size: 16pt;
+	text-align: left;
+	margin: 10pt 20pt 0 180pt;  /*top right bottom left*/
+}
+
+.homepage .avatar {
+	margin: -10pt 20pt 320pt 0pt;  /*top right bottom left*/
+}
+.homepage .avatar table {
+	float: left;
+	width: auto;
+	height: auto;
+	margin: 10pt auto;
+	text-align: center;
+	font-size: 16pt;
+	border-collapse: separate;
+	border-spacing: 20pt 10pt;
+}
+.homepage .avatar img {
+	height: 100pt;
+	width: 100pt;
+	object-fit: cover;
+}
