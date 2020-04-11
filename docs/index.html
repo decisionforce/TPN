@@ -4,13 +4,13 @@
 
 <!-- === Header Starts === -->
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <title>TPN</title>
+    <title>TPN</title>
 
-  <link href="./assets/bootstrap.min.css" rel="stylesheet">
-  <link href="./assets/font.css" rel="stylesheet" type="text/css">
-  <link href="./assets/style.css" rel="stylesheet" type="text/css">
+    <link href="./assets/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/font.css" rel="stylesheet" type="text/css">
+    <link href="./assets/style.css" rel="stylesheet" type="text/css">
 </head>
 <!-- === Header Ends === -->
 
@@ -20,72 +20,80 @@
 
 <!-- === Home Section Starts === -->
 <div class="container">
-  <div class="title" style="margin: 20pt 50pt;">
-    Temporal Pyramid Network for Action Recognition
-  </div>
-  <div class="author">
-    <a href="http://ceyuan.me">Ceyuan Yang</a><sup>*,1</sup>,&nbsp;
-    <a href="https://justimyhxu.github.io/academic.html">Yinghao Xu</a><sup>*,1</sup>,&nbsp;
-    <a href="https://shijianping.me/">Jianping Shi</a><sup>2</sup>,&nbsp;
-    <a href="http://daibo.info/">Bo Dai</a><sup>1</sup>,&nbsp;
-    <a href="http://bzhou.ie.cuhk.edu.hk/">Bolei Zhou</a><sup>1</sup>&nbsp;
-  </div>
-  <div class="institution">
-    <sup>1</sup>The Chinese University of Hong Kong, 
-    <sup>2</sup>SenseTime Group Limited <br>
-  </div>
-  <div class="link">
-    <a href="https://arxiv.org/pdf/2004.03548.pdf" target="_blank">[Paper]</a>&nbsp;
-    <a href="https://github.com/decisionforce/TPN" target="_blank">[Code]</a>
-  </div>
-  <div class="teaser">
-    <img src="figures/framework.png">
-  </div>
+    <div class="title" style="margin: 20pt 50pt;">
+        Temporal Pyramid Network for Action Recognition
+    </div>
+    <div class="author">
+        <a href="http://ceyuan.me">Ceyuan Yang</a><sup>*,1</sup>,&nbsp;
+        <a href="https://justimyhxu.github.io/academic.html">Yinghao Xu</a><sup>*,1</sup>,&nbsp;
+        <a href="https://shijianping.me/">Jianping Shi</a><sup>2</sup>,&nbsp;
+        <a href="http://daibo.info/">Bo Dai</a><sup>1</sup>,&nbsp;
+        <a href="http://bzhou.ie.cuhk.edu.hk/">Bolei Zhou</a><sup>1</sup>&nbsp;
+    </div>
+    <div class="institution">
+        <sup>1</sup>The Chinese University of Hong Kong,
+        <sup>2</sup>SenseTime Group Limited <br>
+    </div>
+    <div class="link">
+        <a href="https://arxiv.org/pdf/2004.03548.pdf" target="_blank">[Paper]</a>&nbsp;
+        <a href="https://github.com/decisionforce/TPN" target="_blank">[Code]</a>
+    </div>
+    <div class="teaser">
+        <img src="figures/framework.png">
+    </div>
 </div>
 <!-- === Home Section Ends === -->
 
 
 <!--====== Overview Section Starts ======-->
 <div class="container">
-  <div class="title">Overview</div>
-  <div class="body">
-  Visual tempo characterizes the dynamics and the temporal scale of an action, which actually describes how fast an action goes.
-  Modeling such visual tempos of different actions facilitates their recognition.
-  In this work we propose a generic Temporal Pyramid Network (TPN) at the feature-level, which can be flexibly integrated into 2D or 3D backbone networks in a plug-and-play manner. 
-  TPN also shows consistent improvements over other challenging baselines on several action recognition datasets.
-  A further analysis also reveals that TPN gains most of its improvements on action classes that have large variances in their visual tempos, validating the effectiveness of TPN.
-  </div>
+    <div class="title">Overview</div>
+    <div class="body">
+        Visual tempo characterizes the dynamics and the temporal scale of an action, which actually describes how fast
+        an action goes.
+        Modeling such visual tempos of different actions facilitates their recognition.
+        In this work we propose a generic Temporal Pyramid Network (TPN) at the feature-level, which can be flexibly
+        integrated into 2D or 3D backbone networks in a plug-and-play manner.
+        TPN also shows consistent improvements over other challenging baselines on several action recognition datasets.
+        A further analysis also reveals that TPN gains most of its improvements on action classes that have large
+        variances in their visual tempos, validating the effectiveness of TPN.
+    </div>
 </div>
 <!--====== Overview Section Ends ======-->
 
 
 <!--====== Results Section Starts ======-->
 <div class="container">
-  <div class="title">Results</div>
-  <div class="body">
-    <li><b>Quantitive Results</b></li>
-    <p>
-    Our TPN could achieve 78.9%, 49.0% and 62.0% top-1 accuracy on the mainstream benchmarks of action recognition i.e., Kinetics-400, Something-Something V1 and V2 respectively, which basically outperforms other state-of-the-art methods. More detailed comparison and ablation studie are presented in our paper.
-    </p>
-    <li><b>Empirical Study</b></li>
-    <p><i>Per-class Performance Gain vs. Per-class Variance of Visual Tempos :</i>
-      Figure 4 indicates that the performance gain is clearly positively correlated with the variance of visual tempos. This study has strongly verified our motivation that TPN could bring a significant improvement for such actions with large variances of visual tempo.</p>
-    <p><i>Robustness of TPN to Visual Tempo Variation :</i>
-      Figure 5 suggests that TPN helps improve the robustness of I3D-50, resulting in a curve with moderater fluctuations. More discussion is presented in our experimental section. 
-    </p>
-  <div class="teaser">
-    <img src="figures/empirical.png">
-  </div>
+    <div class="title">Results</div>
+    <div class="body">
+        <li><b>Quantitive Results</b></li>
+        <p>
+            Our TPN could achieve 78.9%, 49.0% and 62.0% top-1 accuracy on the mainstream benchmarks of action
+            recognition i.e., Kinetics-400, Something-Something V1 and V2 respectively, which basically outperforms
+            other state-of-the-art methods. More detailed comparison and ablation studie are presented in our paper.
+        </p>
+        <li><b>Empirical Study</b></li>
+        <p><i>Per-class Performance Gain vs. Per-class Variance of Visual Tempos :</i>
+            Figure 4 indicates that the performance gain is clearly positively correlated with the variance of visual
+            tempos. This study has strongly verified our motivation that TPN could bring a significant improvement for
+            such actions with large variances of visual tempo.</p>
+        <p><i>Robustness of TPN to Visual Tempo Variation :</i>
+            Figure 5 suggests that TPN helps improve the robustness of I3D-50, resulting in a curve with moderater
+            fluctuations. More discussion is presented in our experimental section.
+        </p>
+        <div class="teaser">
+            <img src="figures/empirical.png">
+        </div>
 
-  </div>
+    </div>
 </div>
 <!--====== Results Section Ends ======-->
 
 
 <!--====== References Section Starts ======-->
 <div class="container">
-  <div class="bibtex">Bibtex</div>
-<pre>
+    <div class="bibtex">Bibtex</div>
+    <pre>
 @inproceedings{yang2020tpn,
   title   = {Temporal Pyramid Network for Action Recognition}},
   author  = {Yang, Ceyuan and Xu, Yinghao and Shi, Jianping and Dai, Bo and Zhou, Bolei},
