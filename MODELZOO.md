@@ -29,8 +29,8 @@ We also train our TPN on [MMAction](https://github.com/open-mmlab/mmaction/blob/
 
 | Model | Frames | TPN | Top-1 | Weights | Config |
 | :---: | :------: | :--------: | :------: | :------: | :------ |
-|R50    | 8 x 8    | Yes  | 76.7 | [link](https://drive.google.com/drive/folders/1UnqZ48doF0UTYjH6iZCXQW3HlDocbBxl) | config_files/kinetics400/baseline/r50f8s8.py |
-|R101   | 8 x 8    | Yes  | 78.2 | [link](https://drive.google.com/drive/folders/1UnqZ48doF0UTYjH6iZCXQW3HlDocbBxl) | config_files/kinetics400/baseline/r101f8s8.py |
+|R50    | 8 x 8    | Yes  | 76.7 | [link](https://drive.google.com/open?id=1pCY4oiWK3hs6MwaPZ8QVPMb-qDCV56w5) | config_files/kinetics400/baseline/r50f8s8.py |
+|R101   | 8 x 8    | Yes  | 78.2 | [link](https://drive.google.com/open?id=1DeVp7cf-dk-x6Um4NouLq5tFniTge0Bd) | config_files/kinetics400/baseline/r101f8s8.py |
 
 All models are trained on 32 GPUs with 150 epochs. More details could be found in `config_files`.
 
