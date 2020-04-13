@@ -1,13 +1,13 @@
 # Model Zoo
 
 ## Pretrained Models
-All pretrained models could be downloaded from [Google Drive](https://drive.google.com/drive/folders/1UnqZ48doF0UTYjH6iZCXQW3HlDocbBxl). After downloading, put them into `ckpt/`.
+All pretrained models can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1UnqZ48doF0UTYjH6iZCXQW3HlDocbBxl). After downloading, put them into `ckpt/`.
 
 ## Main Results
-We report our methods on Kinetics-400, Something-Something V1 and V2. All the numbers including baseline and TPN are obtained via fully-convolutional testing. 
+We report our methods on Kinetics-400, Something-Something V1 and V2. All the numbers including baselines and TPN are obtained via fully-convolutional testing. 
 
 ### Kinetics-400
-Since the number of Kinetics-400 videos are slightly different (might lead to a performance drop), we report all results on own dataset. Our data contains 240403 training videos and 19769 validation videos which are rescaled to 240*320 resolution. Note that the trimmed time of [Non-Local](https://github.com/facebookresearch/video-nonlocal-net/blob/master/DATASET.md) data and the resolution of [MMAction](https://github.com/open-mmlab/mmaction/blob/master/MODEL_ZOO.md) data are different from ours. But the improvement of TPN are consistent. In order to ensure the reproduction, we will find a proper way to release our validation set. All the following results on Kinetics-400 also take flip augmentation testing (~0.1% fluctuation). We sample F frames with stride of S frames (denote FxS). 
+Since the number of Kinetics-400 videos is slightly different (might lead to a performance drop), we report all results on our own dataset. Our data contains 240403 training videos and 19769 validation videos which are rescaled to 240*320 resolution. Note that the trimmed time of [Non-Local](https://github.com/facebookresearch/video-nonlocal-net/blob/master/DATASET.md) data and the resolution of [MMAction](https://github.com/open-mmlab/mmaction/blob/master/MODEL_ZOO.md) data are different from ours. But the improvements of TPN are consistent. In order to ensure the reproduction, we will find a proper way to release our validation set. All the following results on Kinetics-400 also take flip augmentation testing (~0.1% fluctuation). We sample F frames with a stride of S frames (denote FxS). 
 
 
 | Model | Frames | TPN | Top-1 | Weights | Config | 
@@ -35,7 +35,7 @@ We also train our TPN on [MMAction](https://github.com/open-mmlab/mmaction/blob/
 All models are trained on 32 GPUs with 150 epochs. More details could be found in `config_files`.
 
 ### Something-Something
-Something-Something is a more stable benchmark and the whole data could be download from their [website](https://20bn.com/datasets/something-something). We report our results on both V1 and V2. All numbers are obtained by following the standard protocol i.e., 3 crops * 2 clips. [TSM](https://github.com/mit-han-lab/temporal-shift-module) serves as our backbone network. 
+Something-Something is a more stable benchmark and the whole data could be downloaded from their [website](https://20bn.com/datasets/something-something). We report our results on both V1 and V2. All numbers are obtained by following the standard protocol i.e., 3 crops * 2 clips. [TSM](https://github.com/mit-han-lab/temporal-shift-module) serves as our backbone network. 
 Different from original [repo](https://github.com/mit-han-lab/temporal-shift-module) of TSM which takes Kinetics-pretrain, our implementation is initialized by imagenet-pretrain and trained with longer schedule. We use **the same** hyper-parameters of training for both baseline and TPN. Therefore, the improvements come from TPN design instead of other training tricks. We take the uniform sampling for training and validation.
 
 | Model | Dataset Version | Frames | TPN | Top-1 | Weights | Config |
