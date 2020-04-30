@@ -46,9 +46,8 @@ class AuxHead(nn.Module):
             loss_weight=0.5
     ):
         super(AuxHead, self).__init__()
-        self.convs = nn.ModuleList()
-        self.convs.append(
-            ConvModule(inplanes, inplanes * 2, kernel_size=(1, 3, 3), stride=(1, 2, 2), padding=(0, 1, 1), bias=False))
+        self.convs = \
+            ConvModule(inplanes, inplanes * 2, kernel_size=(1, 3, 3), stride=(1, 2, 2), padding=(0, 1, 1), bias=False)
         self.loss_weight = loss_weight
         self.dropout = nn.Dropout(p=0.5)
         self.fc = nn.Linear(inplanes * 2, planes)
