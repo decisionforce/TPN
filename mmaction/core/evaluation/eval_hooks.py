@@ -13,19 +13,6 @@ from torch.utils.data import Dataset
 from mmaction import datasets
 from .accuracy import top_k_accuracy
 
-try:
-    import sys
-
-    sys.path.append(
-        osp.abspath(osp.join(__file__, '../../../',
-                             'third_party/ActivityNet/Evaluation/ava')))
-    from mmaction.third_party.ActivityNet.Evaluation.ava import (
-        object_detection_evaluation as det_eval)
-    import standard_fields
-except ImportError:
-    print('Failed to import ActivityNet evaluation toolbox. Did you clone with'
-          '"--recursive"?')
-
 
 class DistEvalHook(Hook):
     def __init__(self, dataset, interval=1):
