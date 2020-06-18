@@ -37,7 +37,7 @@ model = dict(
             scale=(1, 1, 1),
         ),
         downsampling_config=dict(
-            scales=(1, 1, 1),
+            scales=(2, 1, 1),
             param=dict(
                 inplanes=-1,
                 planes=-1,
@@ -47,7 +47,7 @@ model = dict(
             in_channels=[1024, 1024],
             mid_channels=[1024, 1024],
             out_channels=2048,
-            ds_scales=[(2, 2, 2), (1, 1, 1)],
+            ds_scales=[(2, 1, 1), (1, 1, 1)],
         ),
         aux_head_config=dict(
             inplanes=-1,
