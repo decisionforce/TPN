@@ -173,7 +173,7 @@ def main():
             if args.gpus == 1:
                 model = build_recognizer(
                     cfg.model, train_cfg=None, test_cfg=cfg.test_cfg)
-                load_checkpoint(model, args.checkpoint, strict=True, map_location='cpu')
+                load_checkpoint(model, args.checkpoint, strict=False, map_location='cpu')
                 model = MMDataParallel(model, device_ids=[0])
 
                 data_loader = build_dataloader(
@@ -206,7 +206,7 @@ def main():
                 shuffle=False)
             model = build_recognizer(
                 cfg.model, train_cfg=None, test_cfg=cfg.test_cfg)
-            load_checkpoint(model, args.checkpoint, strict=True, map_location='cpu')
+            load_checkpoint(model, args.checkpoint, strict=False, map_location='cpu')
             model = MMDistributedDataParallel(model.cuda())
             outputs = multi_gpu_test(model, data_loader, args.tmpdir)
     else:
